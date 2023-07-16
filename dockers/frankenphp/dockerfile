@@ -1,0 +1,8 @@
+FROM dunglas/frankenphp:latest-alpine
+RUN install-php-extensions \
+    pdo_pgsql \
+    gd
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN apk add --no-cache bash
+RUN curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.alpine.sh' | bash
+RUN apk add symfony-cli
