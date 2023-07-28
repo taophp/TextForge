@@ -56,17 +56,23 @@ description of a feature proposed for development, hosting a discussion and whic
 - [ ] Markdown support in view
 - [ ] Markdown support in editor
 - [ ] Statistiques
-- [ ] Live statistiques in status bar in editor
-- [ ] Daily goals
+- [ ] Live statistiques in status bar in editor (words, characters with/without space/time)
+- [ ] Goals
 
 ### Meta
 - [ ] Markdown support in view
 - [ ] Markdown support in editor
 
 ## Social
+- [ ] Notification
 - [ ] Share
 - [ ] Private message
 - [ ] Account details
+- [ ] Block user
+- [ ] Report content
+- [ ] Report user
+- [ ] Follow user
+- [ ] Follow container
 
 ## Gamification
 - [ ] Badges
