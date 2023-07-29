@@ -58,12 +58,20 @@ description of a feature proposed for development, hosting a discussion and whic
 - [ ] Statistiques
 - [ ] Live statistiques in status bar in editor (words, characters with/without space/time)
 - [ ] Goals
+    - [ ] per period of time
+    - [ ] per text
+    - [ ] per container
+- [ ] Meta reference
+- [ ] Distraction free mode
+- [ ] Help / Meta pannel
 
 ### Meta
 - [ ] Markdown support in view
 - [ ] Markdown support in editor
+- [ ] Meta reference
 
-## Social
+### Social
+- [ ] Ping user
 - [ ] Notification
 - [ ] Share
 - [ ] Private message
@@ -74,5 +82,36 @@ description of a feature proposed for development, hosting a discussion and whic
 - [ ] Follow user
 - [ ] Follow container
 
-## Gamification
+### Gamification
 - [ ] Badges
+
+### Collaboration
+- [ ] Comment on text
+- [ ] Inline comment / Improvement suggestion
+- [ ] Team writing
+
+### Templates
+- [ ] Snowflake
+- [ ] Others ?
+
+### Personnalisation
+- [ ] Interface
+- [ ] Workflow
+- [ ] Lua Sandbox ?
+
+### Licencing
+- [ ] Copyright
+- [ ] CC
+- [ ] Others ?
+
+### Outputs
+- [ ] Internet Archives
+- [ ] Amazon
+- [ ] Lulu
+- [ ] Other POD services ?
+- [ ] PDF
+- [ ] LaTeX
+- [ ] Office
+- [ ] Markdown
+- [ ] ePub
+- [ ] HTML
