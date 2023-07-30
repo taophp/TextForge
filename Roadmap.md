@@ -55,8 +55,6 @@ description of a feature proposed for development, hosting a discussion and whic
 ### Text
 - [ ] Markdown support in view
 - [ ] Markdown support in editor
-- [ ] Statistiques
-- [ ] Live statistiques in status bar in editor (words, characters with/without space/time)
 - [ ] Goals
     - [ ] per period of time
     - [ ] per text
@@ -115,3 +113,10 @@ description of a feature proposed for development, hosting a discussion and whic
 - [ ] Markdown
 - [ ] ePub
 - [ ] HTML
+
+
+### Statistiques
+- [ ] Text: words, signs including spaces, signs without spaces, goal completion
+- [ ] Container: words, signs including spaces, signs without spaces, goal completion
+- [ ] Text: Live statistiques in status bar in editor (words, characters with/without space/time)
+- [ ] Export
