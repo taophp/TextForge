@@ -6,14 +6,17 @@ services:
     environment:
       FRANKENPHP_CONFIG: "worker ./public/index.php"
       APP_RUNTIME: "Runtime\\FrankenPhpSymfony\\Runtime"
+    volumes:
+      - $PWD/app:/app
     ports:
       - 80:80
+      - 443:443
 
   postgresql:
     image: postgres
     restart: unless-stopped
     volumes:
-      - $PWD/.docker/postgre-data:/var/lib/postgresql/data
+      - $PWD/.docker/data/postgresql:/var/lib/postgresql/data
     ports:
       - 5432:5432
     environment:
