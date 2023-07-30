@@ -4,7 +4,6 @@ services:
     build: ./dockers/frankenphp
     restart: unless-stopped
     environment:
-      FRANKENPHP_CONFIG: "worker ./public/index.php"
       APP_RUNTIME: "Runtime\\FrankenPhpSymfony\\Runtime"
     volumes:
       - $PWD/app:/app
