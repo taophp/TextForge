@@ -17,16 +17,16 @@ Ticket:
 description of a feature proposed for development, hosting a discussion and which can be voted on by users.
 
 ## 0.1 CRUD
-- [ ] Users
+- [x] Users
 - [ ] Roles
-- [ ] Containers
+- [x] Containers
 - [ ] Text
 - [ ] Meta
 - [ ] Ticket
 
 ## 0.2 User
-- [ ] Login / logout
-- [ ] Account creation
+- [x] Login / logout
+- [x] Account creation
 - [ ] Forgotten password
 
 ## 0.3 Container / project
