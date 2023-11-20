@@ -10,4 +10,7 @@ class Container extends Model
 {
     use HasUlids;
     use HasFactory;
+
+    protected $keyType = 'string';
+    public $incrementing = false;
 }
