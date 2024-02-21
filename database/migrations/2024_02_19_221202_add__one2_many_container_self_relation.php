@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::table('containers', function (Blueprint $table) {
             $table->string('container_id')->after('id');
+            $table->foreign('container_id')->references('id')->on('containers');
         });
     }
 
@@ -22,6 +23,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('containers', function (Blueprint $table) {
+            $table->dropForeign(['container_id']);
             $table->dropColumn('container_id');
         });
     }
