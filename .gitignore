@@ -400,3 +400,5 @@ FodyWeavers.xsd
 /.myworkingsession
 /vendor
 /.env
+
+/hot

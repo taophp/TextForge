@@ -20,9 +20,9 @@ description of a feature proposed for development, hosting a discussion and whic
 - [x] Users
 - [ ] Roles
 - [~] Containers
-- [ ] Text
-- [ ] Meta
-- [ ] Ticket
+- [~] Texts
+- [ ] Metas
+- [ ] Tickets
 
 ## 0.2 User
 - [x] Login / logout
