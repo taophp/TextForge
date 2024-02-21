@@ -25,4 +25,9 @@ class Container extends Model
     {
         return $this->hasMany(Container::class);
     }
+
+    public function container()
+    {
+        return $this->belongsTo(Container::class);
+    }
 }
