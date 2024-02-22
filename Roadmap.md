@@ -19,9 +19,9 @@ description of a feature proposed for development, hosting a discussion and whic
 ## 0.1 CRUD
 - [x] Users
 - [ ] Roles
-- [~] Containers
+- [x] Containers
 - [~] Texts
-- [ ] Metas
+- [~] Metas
 - [ ] Tickets
 
 ## 0.2 User
