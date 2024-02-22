@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use App\Models\Text;
+use App\Models\User;
 
 class Container extends Model
 {
@@ -20,6 +21,7 @@ class Container extends Model
         'name',
         'description',
         'container_id',
+        'user_id',
     ];
 
     public function containers(): HasMany
@@ -35,5 +37,10 @@ class Container extends Model
     public function texts(): HasMany
     {
         return $this->hasMany(Text::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }
