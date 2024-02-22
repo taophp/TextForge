@@ -401,4 +401,4 @@ FodyWeavers.xsd
 /vendor
 /.env
 
-/hot
+/public/hot
