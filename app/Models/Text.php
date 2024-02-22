@@ -19,6 +19,7 @@ class Text extends Model
     protected $fillable = [
         'name',
         'container_id',
+        'content'
     ];
 
     public function container()
