@@ -19,7 +19,15 @@ class Meta extends Model
         'name',
         'metable_id',
         'metable_type',
-        'content'
+        'content',
+        'initiator',
+    ];
+    protected $casts = [
+        'initiator' => 'string',
+    ];
+
+    protected $enum = [
+        'initiator' => ['app', 'user'],
     ];
 
     public function metable(): MorphTo

@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('metas', function (Blueprint $table) {
             $table->ulid('id')->primary();
+            $table->enum('initiator', ['app', 'user'])->default('user');
             $table->timestamps();
             $table->string('name');
             $table->string('metable_id');
