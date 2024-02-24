@@ -23,6 +23,7 @@ description of a feature proposed for development, hosting a discussion and whic
 - [~] Texts
 - [~] Metas
 - [~] Tickets
+- [~] Vote
 
 ## 0.2 User
 - [x] Login / logout
