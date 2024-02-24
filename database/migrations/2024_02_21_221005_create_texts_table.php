@@ -13,12 +13,14 @@ return new class extends Migration
     {
         Schema::create('texts', function (Blueprint $table) {
             $table->ulid('id')->primary();
+            $table->string('user_id');
             $table->timestamps();
             $table->string('name');
             $table->string('container_id');
             $table->longText('content');
             
             $table->foreign('container_id')->references('id')->on('containers');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

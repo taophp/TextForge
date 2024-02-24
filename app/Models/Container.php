@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use App\Models\Text;
-use App\Models\User;
+use App\Models\HasUser;
 use App\Models\HasMeta;
 
 class Container extends Model
@@ -15,6 +15,7 @@ class Container extends Model
     use HasUlids;
     use HasFactory;
     use HasMeta;
+    use HasUser;
 
     protected $keyType = 'string';
     public $incrementing = false;
@@ -39,11 +40,6 @@ class Container extends Model
     public function texts(): HasMany
     {
         return $this->hasMany(Text::class);
-    }
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
     }
 
 }

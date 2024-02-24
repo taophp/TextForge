@@ -13,12 +13,14 @@ return new class extends Migration
     {
         Schema::create('metas', function (Blueprint $table) {
             $table->ulid('id')->primary();
+            $table->string('user_id');
             $table->enum('initiator', ['app', 'user'])->default('user');
             $table->timestamps();
             $table->string('name');
             $table->string('metable_id');
             $table->string('metable_type');
             $table->longText('content');
+            
         });
     }
 

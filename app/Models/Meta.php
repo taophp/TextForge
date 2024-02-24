@@ -7,11 +7,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use App\Models\HasMeta;
+use App\Models\HasUser;
+
 class Meta extends Model
 {
     use HasFactory;
     use HasUlids;
     use HasMeta;
+    use HasUser;
 
     protected $keyType = 'string';
     public $incrementing = false;
@@ -21,6 +24,7 @@ class Meta extends Model
         'metable_type',
         'content',
         'initiator',
+        'user_id',
     ];
     protected $casts = [
         'initiator' => 'string',
