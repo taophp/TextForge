@@ -6,12 +6,12 @@ use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
-
+use App\Models\HasMeta;
 class Meta extends Model
 {
     use HasFactory;
     use HasUlids;
+    use HasMeta;
 
     protected $keyType = 'string';
     public $incrementing = false;
@@ -33,11 +33,6 @@ class Meta extends Model
     public function metable(): MorphTo
     {
         return $this->morphTo();
-    }
-
-    public function metas(): MorphMany
-    {
-        return $this->morphMany(Meta::class, 'metable');
     }
 
 }

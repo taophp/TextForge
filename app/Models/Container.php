@@ -6,15 +6,15 @@ use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use App\Models\Text;
 use App\Models\User;
-use App\Models\Meta;
+use App\Models\HasMeta;
 
 class Container extends Model
 {
     use HasUlids;
     use HasFactory;
+    use HasMeta;
 
     protected $keyType = 'string';
     public $incrementing = false;
@@ -46,8 +46,4 @@ class Container extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function metas(): MorphMany
-    {
-        return $this->morphMany(Meta::class, 'metable');
-    }
 }
