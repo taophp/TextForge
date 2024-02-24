@@ -11,9 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('containers', function (Blueprint $table) {
-            $table->string('user_id')->after('id');
-            $table->foreign('user_id')->references('id')->on('containers');
+        Schema::create('tickets', function (Blueprint $table) {
+            $table->ulid('id')->primary();
+            $table->timestamps();
+            $table->string('user_id');
+            $table->string('title');
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
@@ -22,9 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('containers', function (Blueprint $table) {
-            $table->dropForeign(['user_id']);
-            $table->dropColumn('user_id');
-        });
+        Schema::dropIfExists('tickets');
     }
 };

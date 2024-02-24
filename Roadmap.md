@@ -22,7 +22,7 @@ description of a feature proposed for development, hosting a discussion and whic
 - [x] Containers
 - [~] Texts
 - [~] Metas
-- [ ] Tickets
+- [~] Tickets
 
 ## 0.2 User
 - [x] Login / logout
