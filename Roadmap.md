@@ -17,9 +17,9 @@ Ticket:
 description of a feature proposed for development, hosting a discussion and which can be voted on by users.
 
 ## 0.1 CRUD
-- [x] Users
-- [ ] Roles
-- [x] Containers
+- [~] Users
+- [~] Roles
+- [~] Containers
 - [~] Texts
 - [~] Metas
 - [~] Tickets
